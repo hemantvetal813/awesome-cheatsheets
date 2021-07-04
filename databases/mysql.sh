@@ -7,6 +7,8 @@ mysql -u username -p database_name < file.sql                         # Import d
 
 SHOW PROCESSLIST; # Show you any queries that are currently running or in the queue to run
 
+KILL <pid>; # To kill a process/query possibly when db utilization goes high
+
 GRANT ALL PRIVILEGES ON prospectwith.* TO 'power'@'localhost' WITH GRANT OPTION; # Grant all privileges on database
 
 CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password'; # Create user
